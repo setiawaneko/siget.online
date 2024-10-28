@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Document Title -->
+    <title>SIGET | Project</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="public/assets/img/favicons/siget.png">
+    <link rel="icon" type="image/png" href="public/assets/img/favicons/siget.png">
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="public/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="public/assets/img/favicons/siget.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- JavaScript Config -->
+    <script src="public/js/config.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="public/vendors/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="public/assets/css/theme.css" rel="stylesheet" id="style-default">
+    <link href="public/assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+    <link href="public/assets/css/user.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 600px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            width: 300px;
+            position: absolute;
+            top: 80px;
+            right: 20px;
+        }
+
+        #info h2 {
+            margin-top: 0;
+        }
+
+        /* Menambahkan transparansi pada navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+<main class="main" id="top">
+    <div class="bg-white">
+        <nav class="navbar navbar-expand-lg py-1" id="navbar-top" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
+            <div class="container">
+                <a class="navbar-brand me-lg-auto cursor-pointer" href="">
+                    <img class="w-50 w-md-100 img-fluid" src="public/assets/img/logos/infotanah.png" alt="SIGET Logo" />
+                </a>
+                <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" data-navbar-collapse="data-navbar-collapse">
+                    <div class="container d-lg-flex justify-content-lg-end pe-lg-0 w-lg-100">
+                        <ul class="navbar-nav mt-2 mt-lg-1 ms-lg-4 ms-xl-8 ms-2xl-9 gap-lg-x1" data-navbar-nav="data-navbar-nav">
+                            <h4>Sleman</h4>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="map"></div>
+    </div>
+</main>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Inisialisasi peta
+    var map = L.map('map').setView([-7.8003, 110.3626], 12); // Koordinat Sleman dan zoom level
+
+    // Tambahkan tile layer (peta dasar)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+    }).addTo(map);
+
+    // Data tanah untuk Sleman
+    var soilData = {
+        'Cangkringan': { lat: -7.7374, lon: 110.4328, info: 'Cangkringan. Didaerah cangkringan terbagi menjadi beberapa jenis tanah regosol, mediteranian, litosol, grumosol yang memilikik tekstur berpasir dan kriteria sangat kasar yang cocok ditanami oleh tanaman kopi dan tebu .' },
+        'Godean': { lat: -7.7711, lon: 110.3458, info: 'Godean.jenis tanah di godean diantaranya adalah regosol dan mediteran. Regosol adalah tanah yang berasal dari materian gunung api seperti abu vulkanis muda dari gunung api yang cocok ditanami padi,tebu, palawija, tembakau, dan sayuran sedangkan terbentuk dari batuan sedimen yang kurang subur. ' },
+        'Seyegan': { lat: -7.7948, lon: 110.3562, info: 'Seyegan. Didaerah sayegan memiliki beberapa tanah yang berbeda yaitu tanah andosol : tanah vulkanik yang subur yang kaya akan bahan organik dan cocok untuk pertanian. tanah lotosol: tanah yang terbentuk dari proses pelapukan batuan granit memiliki lapisan tanah yang baik untuk pertumbuhan tanaman. tanah regosol: tanah yang sering ditemukan di daerah lereng inin memiliki ktekstur yang bervariasi.' },
+        'Pakem': { lat: -7.7885, lon: 110.3630, info: 'Pakem. Tanah di daerah pakem berdasarkan bahan dan jenis nya merupakan jenis tanah aluvial atau endapan, tanah humus, tanah kapur, tanah vulkanik tanah gambut. dimana pada daerah ini cocok dijadikan lahan perkebunan.' },
+        'Mlati': { lat: -7.7708, lon: 110.3737, info: 'Mlati. tanah di daerah mlati memiliki beberapa jenis yaitu tanah latosol yang kaya akan bahan organik dan mineral dan cocok untuk pertanian, tanah regosl tanah inin terbentuk darimaterial vulkanik dan memiliki kesuburan yang tinggiyang sangat baik untuk wilayah pertanian, dan tanah aluvial yang terbentuk dari endapan sungai yang sangat subur dan baik untuk pertanian.' },
+        'Tempel': { lat: -7.6608468, lon: 110.2569342, info: 'Latosol dan Andosol: Kedua jenis tanah ini memiliki kandungan bahan organik yang tinggi, sehingga mendukung pertumbuhan tanaman yang optimal. Tanah ini cocok untuk berbagai jenis tanaman, termasuk sayuran dan buah-buahan.'},
+    };
+
+    // Fungsi untuk menampilkan informasi tanah
+    function showSoilInfo(name) {
+        var data = soilData[name];
+        document.getElementById('info').innerHTML = `
+            <h2>${name}</h2>
+            <p>${data.info}</p>
+        `;
+    }
+
+    // Menambahkan marker pada peta untuk setiap lokasi
+    for (var name in soilData) {
+        var data = soilData[name];
+        L.marker([data.lat, data.lon])
+            .addTo(map)
+            .bindPopup(`
+                <div>
+                    <strong>${name}</strong><br>
+                    ${data.info}
+                </div>
+            `)
+            .on('click', (function(nameCopy) {
+                return function() {
+                    map.setView([soilData[nameCopy].lat, soilData[nameCopy].lon], 14); // Zoom ke marker
+                    showSoilInfo(nameCopy);
+                };
+            })(name));
+    }
+
+    // Menentukan batasan peta untuk Sleman
+    var bounds = L.latLngBounds(
+        L.latLng(-7.832, 110.316),
+        L.latLng(-7.761, 110.416)
+    );
+    map.fitBounds(bounds);
+</script>
+
+<!-- Vendor and Other Scripts -->
+<script src="public/vendors/popper/popper.min.js"></script>
+<script src="public/vendors/bootstrap/bootstrap.min.js"></script>
+<script src="public/vendors/is/is.min.js"></script>
+<script src="public/vendors/countup/countUp.umd.js"></script>
+<script src="public/vendors/swiper/swiper-bundle.min.js"></script>
+<script src="public/vendors/lodash/lodash.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="public/vendors/list.js/list.min.js"></script>
+<script src="public/assets/js/theme.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>SIGET | Project</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" href="public/assets/img/favicons/siget.png">
+    <link rel="icon" type="public/image/png" href="public/assets/img/favicons/siget.png">
+    <link rel="icon" type="public/image/png" href="public/assets/img/favicons/siget.png">
+    <link rel="shortcut icon" type="image/x-icon" href="public/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="public/assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="public/assets/img/favicons/siget.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="stylesheet" href="public/vendors/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="public/assets/css/theme.css" rel="stylesheet" id="style-default">
+    <link href="public/assets/css/user-rtl.css" rel="stylesheet" id="user-style-rtl">
+    <link href="public/assets/css/user.css" rel="stylesheet" id="user-style-default">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Navbar default tanpa transparansi */
+        .navbar {
+            transition: background-color 0.3s ease;
+            background-color: white; /* Warna latar belakang default */
+        }
+
+        /* Navbar menjadi transparan saat di-scroll */
+        .navbar.transparent {
+            background-color: rgba(255, 255, 255, 0.8); /* Warna dengan transparansi */
+        }
+    </style>
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <div class="bg-white">
+        <div class="content">
+          <nav class="navbar navbar-expand-lg py-1 fixed-top" id="navbar-top">
+              <div class="container">
+                  <a class="navbar-brand me-lg-auto cursor-pointer" href="">
+                      <img class="w-50 w-md-100 img-fluid" src="public/assets/img/logos/SIGET.png" alt="" />
+                  </a>
+                  <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="container d-lg-flex justify-content-lg-end pe-lg-0 w-lg-100">
+                          <ul class="navbar-nav mt-2 mt-lg-1 ms-lg-4 ms-xl-8 ms-2xl-9 gap-lg-x1">
+                              <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#home" title="beranda">Beranda</a></li>
+                              <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#tentang" title="tentang">Tentang</a></li>
+                              <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#pembelajaran" title="pembelajaran">Pembelajaran</a></li>
+                              <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="#bergabung" title="bergabung">Bergabung</a></li>
+                              <li class="nav-item"> <a class="nav-link nav-bar-item px-0" href="Tanahsleman.html" title="Tanahsleman">| Jelajahi Tanah</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+          <div class="container" data-bs-target="#navbar-top" data-bs-spy="scroll" tabindex="0">
+            <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-lg-start mt-9" id="home">
+              <div>
+                <div class="row g-4 g-lg-6 g-xl-7 mb-6 mb-lg-7 mb-xl-10 align-items-center">
+                  <div class="col-12 col-lg-6"><img class="img-fluid w-50 w-lg-100" src="public/assets/img/Hero/ganti.png" alt="" /></div>
+                  <div class="col-12 col-lg-6">
+                    <h1 class="fs-5 fs-md-3 fs-xxl-2 text-black fw-light mb-4">Ayo belajar <span class="fw-bold">Geografi Tanah </span><br class="d-sm-none d-md-block d-xxl-none" />dengan <span class="text-gradient fw-bold">SIGET</span></h1>
+                    <p class="fs-8 fs-md-11 fs-xxl-7 text-primary mb-5 mb-lg-6 mb-xl-7 fw-light">
+                      SIGET (Sistem Informasi Geografis Tanah) adalah sebuah platform digital yang dirancang khusus untuk mengintegrasikan data geografis dengan informasi tentang tanah.
+                    </p>
+                  </div>
+                </div>
+                <div class="row g-4 g-lg-6 g-xl-7 align-items-center" data-aos="zoom-in" data-aos-duration="2000">
+                  <div class="col-12 col-lg-6 order-1 order-lg-0">
+                    <p class="fs-8 fs-md-7 fs-xxl-6 text-success fw-bold mb-x1 text-capitalize">Mari Belajar Bersama Kami </p>
+                    <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-4">Betapa Banyaknya <br class="d-none d-md-block d-lg-none" /><span class="fw-bold">lapisan Tanah </span><br class="d-none d-xl-block d-xxl-none" /><br class="d-sm-none" />itu</h1>
+                    <p class="fs-8 fs-md-11 fs-xxl-7 text-primary mb-5 mb-lg-6 mb-xl-7 fw-light">
+                      Lapisan tanah adalah istilah yang digunakan untuk menggambarkan berbagai horison atau lapisan yang terbentuk di dalam profil tanah. Setiap lapisan tanah memiliki karakteristik fisik, kimia, dan biologis yang unik.
+                    </p>
+                  </div>
+                  <div class="col-12 col-lg-6 order-0 order-lg-1"><img class="img-fluid w-50 w-lg-100" src="public/assets/img/Hero/nabila.png" alt="" /></div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-9 mb-lg-10 mb-xxl-11">
+              <div class="row g-4" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="public/assets/img/icons/12.png" alt="" />
+                  <h1 class="text-secondary fs-4 fs-lg-3 fs-xl-2 counter-delivared" data-countup='{"endValue":12}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
+                  <p class="text-success fs-7 fs-xl-6 fw-bold mb-0">
+                    Macam Tanah <br class="d-none d-xl-block d-xxl-none" />Indonesia</p>
+                </div>
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="public/assets/img/icons/14.png" alt="" />
+                  <h1 class="text-secondary fs-4 fs-lg-3 fs-xl-2" data-countup='{"endValue":14}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
+                  <p class="text-success fs-7 fs-xl-6 fw-bold mb-0">
+                    Jenis Tanah <br class="d-none d-xl-block d-xxl-none" />Lainnya </p>
+                </div>
+                <div class="col-12 col-lg-4 text-center"><img class="mb-3" src="public/assets/img/icons/4.png" alt="" />
+                  <h1 class="text-secondary fs-4 fs-lg-3 fs-xl-2" data-countup='{"endValue":4}' style="font-variant-numeric: lining-nums proportional-nums;"> 0</h1>
+                  <p class="text-success fs-7 fs-xl-6 fw-bold mb-0">
+                    Lapisan <br class="d-none d-xl-block d-xxl-none" />Tanah </p>
+                </div>
+              </div>
+            </section>
+            <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-lg-start" id="tentang" data-aos="zoom-in-down" data-aos-duration="2000">
+              <h4 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6 text-capitalize">Tentang Kami </h4>
+              <h1 class="fs-5 fs-lg-3 fs-xl-2 text-secondary text-capitalize fw-light mb-x1">Tim <span class="fw-bold">Inti </span>Kami<br />Tentang <span class="fw-bold">SIGET</span></h1>
+              <div class="row mb-7 mb-lg-8 mb-xl-9 gap-3">
+                <div class="col-12 col-lg">
+                  <p class="text-black fs-10 fs-md-9 fs-xxl-8 lh-xl mb-0 line-clamp-5"> Selamat datang di SIGET, solusi inovatif untuk memahami dan mengelola tanah secara efisien menggunakan teknologi Sistem Informasi Geografis (SIG). Kami adalah tim ahli yang berkomitmen untuk menyediakan platform SIG yang dapat mengintegrasikan data geografis dengan informasi tentang tanah. </p>
+                </div>
+                <div class="col-12 col-lg">
+                  <p class="text-black fs-10 fs-md-9 fs-xxl-8 lh-xl mb-0 line-clamp-5"> Visi kami adalah menjadi pemimpin dalam teknologi SIG untuk memahami tanah dan lingkungan serta mendukung pengelolaan sumber daya alam yang berkelanjutan. Misi kami adalah menyediakan solusi SIG inovatif, memfasilitasi pengambilan keputusan berbasis data, dan mengutamakan keberlanjutan.</p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center mb-8 mb-lg-10"> <img class="img-fluid badhon" src="public/assets/img/team/sigetlogo.png" alt="" />
+                <div class="about-card">
+                  <h1 class="fs-8 fs-md-7 fs-xxl-6 text-success fw-bold">SIGET</h1>
+                  <p class="fs-10 fs-md-9 fs-xxl-8 text-primary mb-0 line-clamp-5">
+                    Bergabunglah dengan SIGET hari ini dan temukan cara baru untuk memahami, mengelola, dan memanfaatkan potensi tanah dan lingkungan dengan lebih baik!
+                  </p>
+                </div>
+              </div>
+              <div data-aos="zoom-out-down" data-aos-duration="2000">
+                <p class="text-secondary text-capitalize fw-light mb-0 fs-5 fs-lg-4 text-center mb-7 mb-lg-8" >
+                   <span class="fw-bold">Tim</span> Pengembang</p>
+                <div class="row mb-13 w-lg-75 mb-lg-5 mx-auto gy-2 gy-lg-5 h-100" id="pengembang">
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="position-relative w-75 w-md-100 mx-auto mb-2"><img class="w-100 team-hero-image" src="public/assets/img/team/team/enbyla.PNG" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
+                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Nabila salma </h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Pengembang 1</h5>
+                    <p class="fs-10 fs-md-9 fs-xxl-8 text-primary lh-xl mb-0 line-clamp-2">be happy 101%</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="position-relative w-75 w-md-100 mx-auto mb-2"><img class="w-100 team-hero-image" src="public/assets/img/team/team/sabrina2.PNG" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
+                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Sabrina nur syafa</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Pengembang 2</h5>
+                    <p class="fs-10 fs-md-9 fs-xxl-8 text-primary lh-xl mb-0 line-clamp-2">Ga semua realita sesuai ekspetasi</p>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 px-3 text-center mb-5 mb-lg-0">
+                    <div class="position-relative w-75 w-md-100 mx-auto mb-2"><img class="w-100 team-hero-image" src="public/assets/img/team/team/salwa1.PNG" alt="" />
+                      <div class="social-icons"><a href="#!"> <span class="uil uil-facebook"></span></a><a href="#!"> <span class="uil uil-instagram-alt"></span></a><a href="#!"> <span class="uil uil-linkedin"></span></a></div>
+                    </div>
+                    <h3 class="fs-9 fs-md-8 text-success fw-bold mb-1">Salwa imroatun rosyidah</h3>
+                    <h5 class="text-black fs-10 fs-md-9 fw-medium text-capitalize mb-3">Pengembang 3</h5>
+                    <p class="fs-10 fs-md-9 fs-xxl-8 text-primary lh-xl mb-0 line-clamp-2">Kita punya harapan tapi dunia punya kenyataan</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-md-start" id="pembelajaran">
+              <h3 class="mb-x1 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold pt-6" data-aos="fade-up"
+              data-aos-duration="3000">Pembelajaran </h3>
+              <div class="mb-6 mb-lg-7 mb-xl-10" id="slider-1" data-aos="fade-up"
+              data-aos-duration="2000">
+                <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize fw-light mb-13 mb-lg-7" id="lapisan"> <span class="fw-bold">Lapisan </span>Tanah</h1>
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":32,"loop":true,"loopedSlides":5,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/atas.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">LAPISAN PERTAMA </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="tanah1.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Organic Layer</h3>
+                            <p class="text-dark fs-8 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">lapisan tanah paling atas yang terbuat dari bahan-bahan tanaman dan hewan yang tidak terurai. Lapisan ini mengandung banyak bahan organik yang dibutuhkan oleh tanaman untuk tumbuh.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/tanah2.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">LAPISAN KEDUA </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="tanah2.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Topsoil</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">lapisan tanah teratas yang biasanya mengandung bahan organik dan berwarna gelap. Lapisan ini memiliki ketebalan rata-rata antara 20-30 cm.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/tanah.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">LAPISAN KETIGA </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="tanah3.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Subsoil</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3"> lapisan tanah yang terletak tepat di bawah permukaan tanah bagian atas. Subsoil merupakan lapisan material pelapukan yang mendasari permukaan tanah.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/tanahbatu.png')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">LAPISAN KEEMPAT </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="tanah4.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Parent material</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">bahan asal terbentuknya tanah. Bahan induk adalah istilah untuk komposisi fisik, kimia, dan mineralogi umum dari bahan yang tidak terkonsolidasi, mineral atau organik, yang membentuk tanah.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/batu.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">LAPISAN KELIMA </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="tanah5.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Bedrock</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Bedrock biasanya adalah daerah batuan yang tidak tergabung dalam subtanah basal. Pada daerah-daerah tertentu di permukaan planet, batuan pun akan ditemukan. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-1"><span class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-1"><span class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6 mb-lg-7 mb-xl-10" id="slider-2" data-aos="fade-up"
+                data-aos-duration="2000">
+                <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize text-md-end fw-light mb-13 mb-lg-7" id="macam">Macam-macam <span class="fw-bold">Tanah</span><br class="d-sm-none" /></h1>
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-sliderdiv" data-swiper='{"spaceBetween":32,"loop":true,"loopedSlides":5,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/regosol.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="regosol.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Tanah regosol</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah regosol adalah tanah yang berasal dari material gunung berapi. Tanah ini memiliki tekstur kasar bercampur dengan pasir, dengan solum tebal dan memiliki tingkat kesuburan rendah.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/latosol.png')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="latosol.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Tanah latosol</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah latosol adalah tanah yang terbentuk karena pelapukan dengan intensitas tinggi. Tanah ini dapat ditemukan di wilayah dengan iklim hutan hujan tropis.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/alluvial.jpeg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="alluvial.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Tanah aluvial</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah aluvial adalah tanah yang terbentuk dari endapan lumpur yang terbawa oleh aliran sungai. Tanah ini biasanya ditemukan di bagian hilir karena dibawa dari hulu. Tanah ini biasanya berwarna coklat hingga kelabu.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/organosol.jpg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="organosol.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Tanah organosol</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah organosol adalah tanah yang terbentuk dari sisa-sisa tanaman di daerah yang selalu tergenang air seperti rawa-rawa. Tanah ini memiliki tekstur yang lembek karena tergenang air.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-2"><span class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-2"><span class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-6 mb-lg-7 mb-xl-10" id="slider-3" data-aos="fade-up"
+                data-aos-duration="2000">
+                <div class="mb-4 mb-lg-0">
+                  <div class="swiper-theme-container position-relative">
+                    <div class="swiper-container theme-slider" data-swiper='{"spaceBetween":32,"loop":true,"loopedSlides":5,"breakpoints":{"0":{"slidesPerView":1},"768":{"slidesPerView":2},"1024":{"slidesPerView":3}}}'>
+                      <div class="swiper-wrapper">
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/mediterian.jpeg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="mediterian.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Mediterian</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah Mediteran adalah tanah yang terbentuk dari pelapukan batuan kapur. Tanah ini tidak subur karena kandungan unsur hara dan bahan organiknya rendah, serta sifat fisik tanah yang tidak gembur.</p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/litosol.jpeg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="litosol.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Litosol</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah litosol adalah tanah yang baru terbentuk dari proses pelapukan batuan beku dan sedimen. Tanah ini memiliki tekstur yang beragam, dari halus, berpasir, hingga berkerikil. </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/laterit.jpeg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="laterit.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Laterit</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah laterit adalah tanah yang kaya akan oksida besi dan aluminium. Tanah ini terbentuk di daerah tropis dan subtropis yang iklimnya lembab. </p>
+                          </div>
+                        </div>
+                        <div class="product-card swiper-slide">
+                          <div class="product-card-top" style="background-image: url('public/assets/img/products/products/rezina.jpeg')">
+                            <div class="add-section"><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center">Macam-macam Tanah </a><a class="fs-10 fs-md-9 d-flex flex-column flex-xl-row align-items-center" href="renzina.html"><span class="uil uil-file-heart me-1 align-middle"></span>Detail </a></div>
+                          </div>
+                          <div class="d-flex flex-column gap-x1 p-x1 pb-5 product-card-body">
+                            <h3 class="text-success fw-semi-bold text-center line-clamp-1 fs-8 fs-md-11 fs-xxl-7">Renzina</h3>
+                            <p class="text-dark fs-10 fs-md-9 fs-xl-8 text-capitalize lh-xl mb-0 line-clamp-3">Tanah renzina adalah tanah kapur hitam yang terbentuk dari pelapukan batuan kapur di daerah karst atau kapur. Tanah renzina banyak ditemukan di daerah pegunungan dan karst.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-nav">
+                      <button class="btn prev-button" data-slider="slider-3"><span class="uil uil-angle-left-b"></span></button>
+                      <button class="btn next-button" data-slider="slider-3"><span class="uil uil-angle-right-b"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-9 mb-lg-10 mb-xxl-11" id="blogs">
+              <div class="row mb-6 mb-lg-7 mb-xl-10 pt-6" data-aos="fade-up"
+                data-aos-duration="2000">
+                <h3 class="mb-3 fs-8 fs-md-7 fs-xxl-6 text-success fw-bold text-center text-lg-start text-capitalize">SIGET Informasi </h3>
+                <h1 class="fs-5 fs-md-3 fs-xxl-2 text-secondary text-capitalize mb-7 mb-lg-7 text-center text-lg-start">
+                  Update <span class="fw-bold">Informasi </span><br />dan <span class="fw-bold">Pembelajaran</span></h1>
+                <div class="col-15 col-lg-12 mb-5 mb-lg-0 px-lg-2 px-xxl-3">
+                  <div class="blog-card">
+                    <div class="blog-card-top text-center" style="background-image: url('public/assets/img/blogs/segitiga.png'); max-width: 800px; max-height: 100px;">
+                      <div class="inner-div">
+                        <p class="fw-semi-bold mb-0">Segitiga Tekstur</p>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column justify-content-between h-100">
+                      <div class="px-3 px-xl-x1 pt-2"><span class="mb-0" style="color: #5C5C5C;">Diagram untuk menentukan kelas-kelas tekstur tanah</span>
+                        <h2 class="text-success fw-semi-bold text-capitalize mb-lg-4 fs-8 fs-md-11 fs-xxl-7">Ada 12 kelas tekstur tanah yang dibedakan oleh jumlah persentase ketiga fraksi tanah tersebut</h2>
+                      </div>
+                      <div class="px-3 px-xl-x1 pb-2 pt-1">
+                        <p class="text-cardText fs-10 fs-md-9 fs-xl-8 fw-light lh-xl mb-2 line-clamp-5">Segitiga Tekstur. Tekstur tanah adalah perbandingan relatif antara pasir, lanau, atau lempung dalam suatu tanah. Kelas tekstur tanah adalah pengelompokan tanah berdasarkan proporsi relatifnya.</p><a class="fw-bold fs-9 fs-md-8 mb-0 read-more" href="segitiga.html">Selengkapnya</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="mb-9 mb-lg-10 mb-xxl-11 text-center text-lg-start mt-1" id="bergabung" data-aos="fade-up"
+            data-aos-duration="2000">
+              <div class="row g-4 g-lg-6 g-xl-7 pt-6">
+                <div class="d-none d-lg-block col-lg-6 text-center"><img class="img-fluid" src="public/assets/img/illustrations/tanah.png" alt="" /></div>
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center mt-0">
+                  <p class="fs-8 fs-md-7 fs-xxl-6 text-success fw-bold my-0 text-capitalize">Bergabunglah Dengan Kami </p>
+                  <h1 class="fs-5 fs-lg-4 fs-xl-3 text-secondary text-capitalize fw-light mt-3 mb-4">
+                    Belajar  
+                    <span class="fw-bold">SIGET </span>Bersama <br>Kami</h1>
+                  <p class="text-success fs-8 fs-lg-7 text-capitalize beginner-guide my-4">Kunjungi <span class="fw-bold">Sekolah Kami </span><br><a class="fw-bold fs-9 fs-md-8 mb-0 read-more" href="https://maam.sch.id/">MA ASSALAFIYYAH MLANGI</a><br>Untuk lebih lanjut </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <button class="btn scroll-to-top" data-scroll-top="data-scroll-top"><span class="uil uil-angle-up text-white"></span></button>
+          <footer class="Footer" style="background-image: url('public/assets/img/illustrations/BOTTOM.png')">
+            <div class="pb-x1 px-3 px-lg-0">
+              <div class="container">
+                <div class="row align-items-end g-4 g-sm-6">
+                  <div class="col-6 col-md-4">
+                    <div class="mb-6 mb-md-8"><a class="cursor-pointer" href=""><img class="img-fluid" src="public/assets/img/logos/footer1.png" alt="" /></a></div>
+                    <div>
+                      <div class="mb-2"> <a class="links" href="#">Beranda</a></div>
+                      <div class="mb-2"> <a class="links" href="#about">Tentang</a></div>
+                      <div class="mb-2"> <a class="links" href="#products">Pembelajaran</a></div>
+                      <div class="mb-2"> <a class="links" href="#review">
+                          
+                        </a></div><a class="links" href="#support">
+                        Bergabung
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <div class="mb-3 mb-md-5">
+                      <h3 class="fs-9 fs-md-8 fw-bold mb-0" style="color: #FFF0D3;">Info Pengembang</h3>
+                    </div>
+                    <div>
+                      <div class="mb-2"> <a class="links" href="#pengembang">Nabila salma maimanah</a></div>
+                      <div class="mb-2"> <a class="links" href="#pengembang">Sabrina nur syafa </a></div>
+                      <div class="mb-2"> <a class="links" href="#pengembang">Salwa imroatun rosyidah</a></div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div class="row g-4 g-sm-6 g-md-0">
+                      <div class="col-6 col-md-12 mb-md-7">
+                        <h3 class="fs-9 fs-md-8 fw-bold mb-3" style="color: #FFF0D3;">Ikuti Media Sosial Kami</h3>
+                        <div class="d-flex align-items-center"> <a class="social-icon me-2" href="#!"><span class="uil uil-facebook fs-8"></span></a><a class="social-icon me-2" href="#!"><span class="uil uil-linkedin fs-8"></span></a><a class="social-icon me-2" href="#!"><span class="uil uil-youtube fs-8"></span></a><a class="social-icon" href="#!"><span class="uil uil-twitter fs-8"></span></a></div>
+                      </div>
+                      <div class="col-6 col-md-12">
+                        <div class="mb-3">
+                          <p class="fs-9 fs-md-8 fw-bold lh-nomal mb-0" style="color: #FFF0D3;"> Kontak </p>
+                        </div>
+                        <div class="fs-10 fs-md-9">
+                          <p class="mb-0 text-white opacity-70"> SIGET Company</p>
+                          <p class="mb-0 text-white opacity-70"> Mlangi, Sleman</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </footer>
+        </div>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript untuk Mengatur Transparansi Saat Scroll -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar-top');
+            if (window.scrollY > 50) { // Jika scroll lebih dari 50px
+                navbar.classList.add('transparent');
+            } else {
+                navbar.classList.remove('transparent');
+            }
+        });
+    </script>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="public/vendors/popper/popper.min.js"></script>
+    <script src="public//js/config.js"></script>
+    <script src="public/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="public/vendors/is/is.min.js"></script>
+    <script src="public/vendors/countup/countUp.umd.js"></script>
+    <script src="public/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="public/vendors/lodash/lodash.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="public/vendors/list.js/list.min.js"></script>
+    <script src="public/assets/js/theme.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+
+</html>
+
